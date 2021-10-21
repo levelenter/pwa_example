@@ -1,9 +1,8 @@
 <template>
   <div>
     <button
-      {{is_iOS}}
       v-if="!is_iOS"
-      class="btn btn-lg btn-outline-secondary h-25 w-50 align-middle"
+      class="btn btn-lg btn-outline-secondary h-25 w-100 align-middle"
       @click="installBnr"
     >
       インストールする
