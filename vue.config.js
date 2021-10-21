@@ -10,7 +10,7 @@ module.exports = {
     disableHostCheck: true,
   },
   pwa: {
-    name: "My App",
+    name: "PWA Example",
     themeColor: "#4DBA87",
     msTileColor: "#000000",
     appleMobileWebAppCapable: "yes",
@@ -24,11 +24,11 @@ module.exports = {
     msTileImage: "./img/icons/msapplication-icon-144x144.png",
 
     // configure the workbox plugin
-    // workboxPluginMode: "InjectManifest",
-    // workboxOptions: {
-    //   // swSrc is required in InjectManifest mode.
-    //   swSrc: "src/service-worker.js",
-    //   // ...other Workbox options...
-    // },
+    workboxPluginMode: "InjectManifest",
+    workboxOptions: {
+      // swSrc is required in InjectManifest mode.
+      swSrc: "src/service-worker.js",
+      // ...other Workbox options...
+    },
   },
 };
