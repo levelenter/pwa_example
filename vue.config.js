@@ -11,12 +11,13 @@ module.exports = {
     disableHostCheck: true,
   },
   pwa: {
-    name: "PWA Example",
+    name: "PWAExample",
+    short_name: "PWA",
     themeColor: "#4DBA87",
     msTileColor: "#000000",
     appleMobileWebAppCapable: "yes",
     appleMobileWebAppStatusBarStyle: "black",
-
+    start_url: "/pwa_example/index.html",
     // icon
     favicon32: "./img/icons/favicon-32x32.png",
     favicon16: "./img/icons/favicon-16x16.png",
