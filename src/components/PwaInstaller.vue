@@ -24,6 +24,7 @@ export default defineComponent({
     console.log("ios", mb.os(), mb);
     const installBnr = () => {
       let deferredPrompt;
+      console.log("installBnr");
 
       window.addEventListener("beforeinstallprompt", (e) => {
         // Prevent Chrome 67 and earlier from automatically showing the prompt

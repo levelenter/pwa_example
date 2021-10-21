@@ -3,6 +3,7 @@
 //
 // https://qiita.com/kawakawaryuryu/items/dd6a1c048e830f2f36ef
 // https://qiita.com/w2or3w/items/74a6e471501ee28ee9dd
+
 module.exports = {
   publicPath: "/pwa_example",
   devServer: {
@@ -23,12 +24,12 @@ module.exports = {
     maskIcon: "./img/icons/safari-pinned-tab.svg",
     msTileImage: "./img/icons/msapplication-icon-144x144.png",
 
-    // configure the workbox plugin
-    workboxPluginMode: "InjectManifest",
-    workboxOptions: {
-      // swSrc is required in InjectManifest mode.
-      swSrc: "src/service-worker.js",
-      // ...other Workbox options...
-    },
+    // // configure the workbox plugin
+    // workboxPluginMode: "InjectManifest",
+    // workboxOptions: {
+    //   // swSrc is required in InjectManifest mode.
+    //   swSrc: "src/service-worker.js",
+    //   // ...other Workbox options...
+    // },
   },
 };
